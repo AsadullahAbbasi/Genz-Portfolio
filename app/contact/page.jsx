@@ -8,29 +8,11 @@ import { Label } from "@/components/ui/label";
 import QRCode from "@/components/qr-code";
 import CursorTrail from "@/components/cursor-trail";
 import FloatingStickers from "@/components/floating-stickers";
-import emailjs from "emailjs-com";
 
 export default function ContactPage() {
-  const nameRef = useRef(null);
-  const emailRef = useRef(null);
-  const messageRef = useRef(null);
-  emailjs.init("URJpXoGovTzS_UYc6"); // e.g., "UCzP5xHAbc1lXZ3Qy"
+ 
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    const name = nameRef.current?.value;
-    const email = emailRef.current?.value;
-    const message = messageRef.current?.value;
-
-    if (!name || !email || !message) return; // optional: guard clause
-
-    emailjs.send("service_rrw1tl8", "template_55sn0hl", {
-      name,
-      email,
-      message,
-    });
-  };
+  
 
   return (
     <main className="relative min-h-screen">
