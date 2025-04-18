@@ -31,7 +31,7 @@ export default function ContactPage() {
           <div className="rounded-xl border bg-card p-6 shadow-sm">
             <h2 className="mb-6 text-2xl font-bold">Message Me</h2>
 
-            <form className="space-y-4" onSubmit={handleSubmit}>
+            <form className="space-y-4" >
               <div className="space-y-2">
                 <Label htmlFor="name">Your Name</Label>
                 <Input
