@@ -36,7 +36,6 @@ export default function ContactPage() {
                 <Label htmlFor="name">Your Name</Label>
                 <Input
                   id="name"
-                  ref={nameRef}
                   placeholder="What should I call you?"
                 />
               </div>
@@ -46,7 +45,6 @@ export default function ContactPage() {
                 <Input
                   id="email"
                   type="email"
-                  ref={emailRef}
                   placeholder="So I can reply to you"
                 />
               </div>
@@ -55,7 +53,6 @@ export default function ContactPage() {
                 <Label htmlFor="message">Your Message</Label>
                 <Textarea
                   id="message"
-                  ref={messageRef}
                   placeholder="Tell me what's on your mind..."
                   className="min-h-[150px]"
                 />
